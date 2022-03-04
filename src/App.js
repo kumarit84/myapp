@@ -12,17 +12,49 @@ import UserGreeting from './components/UserGreeting'
 import NameList from './components/NameList'
 import PersonList from './components/PersonList'
 import Hello from './components/Hello'
+import Stylesheet from './components/Stylesheet'
+import Inline from './components/Inline'
+import './components/appStyles.css'
+import styles from './components/appStyles.module.css'
+import Form from './components/Form'
+import LifecycleA from './components/LifecycleA'
+import FragmentDemo from './components/FragmentDemo'
+import Table from './components/Table'
+import PureComp from './components/PureComp'
+import ParentComp from './components/ParentComp'
+import RefsDemo from './components/RefsDemo'
+import FocusInput from './components/FocusInput'
+import PortalDemo from './components/PortalDemo'
+import Hero from './components/Hero'
+import ErrorBoundary from './components/ErrorBoundary'
+import ClickCounter from './components/ClickCounter'
+import HoverCounter from './components/HoverCounter'
 
 function App() {
   return (
-    <div className="App">
-    <Greet name="kuamr" heroName="superman">
-      <p>This is childern</p>
-    </Greet>
-    <Greet name="valli" heroName="wondorwomen">
-      <button>action</button>
-    </Greet>
-    <Greet name="rithu" heroName="spiderman"/>
+   <div className="App">
+   <ClickCounter/>
+   <HoverCounter/>
+   {/*<ErrorBoundary>
+     <Hero heroName='batman' />
+   </ErrorBoundary>
+
+   <ErrorBoundary>
+     <Hero heroName='joker' />
+   </ErrorBoundary>*/}
+
+   {/*<PortalDemo/>*/}
+   {/*<FocusInput />*/}
+   {/*<RefsDemo/>*}
+   {/*<ParentComp/>*/}
+   {/*<Table/>*/}
+   {/*<FragmentDemo/>*/}
+     {/*<LifecycleA/>*/}
+    {/* <h1 className='error'>Error</h1>
+     <h1 className={styles.success}>success</h1>
+     <Inline/>
+    <Form/>
+   <Stylesheet primary={true}/>*/}
     {/*<PersonList/>*}
      {/*<Hello />*/}
     {/*<NameList/>*/}
@@ -50,7 +82,7 @@ function App() {
       <Welcome name ="Kumar" heroName="batman"/>
       <Welcome name ="Valli" heroName="wonderwoman"/>
       <Welcome name ="rithu" heroName="spiderman"/> */}
-    </div>
+    </div> 
   );
 }
 
